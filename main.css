@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+}
+
+main {
+    background-image: url("images/bg-desktop.svg");
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+main header .logo {
+    padding: 5rem 4rem 2rem;
+}
+
+@media (max-width: 46rem) {
+    main header .logo {
+        padding: 4rem 2rem 2rem;
+    }
+}
+
+main header .logo img {
+    width: 20rem;
+}
+
+@media (max-width: 46rem) {
+    main header .logo img {
+        width: 15rem;
+    }
+}
+
+main header .info {
+    padding: 3rem;
+    display: flex;
+    /* align-items: center; */
+    gap: 4rem;
+}
+
+@media (max-width: 72rem) {
+    main header .info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+main header .info img {
+    width: 70rem;
+}
+
+@media (max-width: 46rem) {
+    main header .info img {
+        width: 35rem;
+    }
+}
+
+main header .info .text h1 {
+    width: 51rem;
+    color: hsl(0, 0%, 100%);
+    font-size: 4.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 3.5rem;
+}
+
+@media (max-width: 46rem) {
+    main header .info .text h1 {
+        width: 32rem;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}
+
+main header .info .text p {
+    width: 51rem;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 46rem) {
+    main header .info .text p {
+        width: 32rem;
+        text-align: center;
+    }
+}
+
+main header .info .text a {
+    display: block;
+    background-color: hsl(0, 0%,100%);
+    color: hsl(257, 40%, 49%);
+    padding: 1rem 5rem;
+    width: fit-content;
+    font-size: 1.8rem;
+    text-decoration: none;
+    border-radius: 6vh;
+    box-shadow:  0 0 1rem hsl(0, 3%, 13%);
+    transition: .5s;
+}
+
+@media (max-width: 46rem) {
+    main header .info .text a {
+        margin: auto;
+        padding: 1rem 7rem;
+    }
+}
+
+main header .info .text a:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: hsl(0, 0%, 100%);
+}
+
+main .icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 5rem
+}
+
+@media (max-width: 46rem) {
+    main .icons {
+        justify-content: center;
+    }
+}
+
+main .icons i {
+    font-size: 2rem;
+    color: white;
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: .5s;
+    cursor: pointer;
+}
+
+main .icons i:hover {
+    color: hsl(300deg 73.79% 56.6%);
+    border-color: hsl(300deg 73.79% 56.6%);
+}
